@@ -40,32 +40,21 @@ header a {
   font-size: 1.5rem;
   color: var(--off-white);
   text-decoration: none;
-  transition: 300ms, text-decoration 100ms;
 }
-
 
 header a:hover {
   color: var(--warn-color);
-  text-decoration: underline;
+  animation: underline 1s;
 }
 
-/*
 @keyframes underline {
   0% {
     text-decoration: none;
-    color: var(--white);
   }
-  50% {
+  40% {
     text-decoration: underline;
-    color: var(--warn-color);
-  }
-  100% {
-    text-decoration: none;
-    color: var(--warn-color);
   }
 }
-*/
-
 /* end header link animations */
 
 /* article link transitions */
