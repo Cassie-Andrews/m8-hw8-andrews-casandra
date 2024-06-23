@@ -40,22 +40,44 @@ header a {
   font-size: 1.5rem;
   color: var(--off-white);
   text-decoration: none;
+  transition: 300ms, text-decoration 100ms;
 }
+
 
 header a:hover {
   color: var(--warn-color);
   text-decoration: underline;
 }
+
+/*
+@keyframes underline {
+  0% {
+    text-decoration: none;
+    color: var(--white);
+  }
+  50% {
+    text-decoration: underline;
+    color: var(--warn-color);
+  }
+  100% {
+    text-decoration: none;
+    color: var(--warn-color);
+  }
+}
+*/
+
 /* end header link animations */
 
 /* article link transitions */
 main a {
   color: var(--danger-color);
+  transition: 100ms linear;
 }
 
 main a:hover {
   color: var(--white);
   background-color: var(--danger-color);
+  text-decoration: none;
 }
 /* end article link transitions */
 
@@ -113,10 +135,11 @@ section.hero > button {
   cursor: pointer;
 }
 
-/* hero button animation */
-section.hero >button:hover {
+/* hero button animation start */
+section.hero > button:hover {
   background-color: var(--warn-color);
 }
+/* hero button animation end */
 
 main article {
   padding: 48px 96px;
